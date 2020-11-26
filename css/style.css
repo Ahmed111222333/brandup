@@ -24,7 +24,7 @@ overflow: hidden;
   background: #f7f7f7 url("../img/5.png ");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center left;
+  background-position:  left;
   min-height: 100vh;
   padding: 6rem;
 
@@ -36,7 +36,7 @@ overflow: hidden;
   direction: rtl;
   text-align: right;
 }
-@media(max-width:1195px){
+@media(max-width:1160px){
   .overlay{
     position: relative;
     z-index: 0;
@@ -76,12 +76,12 @@ overflow: hidden;
 }
 .heading-primary-sub {
   display: block;
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: 600;
   letter-spacing: 0.8rem;
 }
 .paragraph {
-  font-size: 1rem;
+  font-size: .9rem;
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: 400;
   color: #777;
