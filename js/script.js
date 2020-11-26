@@ -20,7 +20,7 @@ $(document).ready(function() {
       center: true,
       items: 1,
       margin: 0,
-     // autoplay: true,
+      autoplay: true,
       autoplayTimeout: 3000,
       smartSpeed: 450,
       
