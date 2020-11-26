@@ -4,13 +4,56 @@
 .main-header {
   position: relative;
   max-width: 100vw;
-  max-height: 100%;
   padding-bottom: 25px;
   font-size: 1.6rem;
-  background: #f7f7f7;
+  background: #f7f7f7 url("../img/5.png ");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center right;
+  min-height: 100vh;
+  padding: 6rem;
+}
+.preloader{
+overflow: hidden;
+}
+.header2{
+  position: relative;
+  max-width: 100vw;
+  padding-bottom: 25px;
+  font-size: 1.6rem;
+  background: #f7f7f7 url("../img/5.png ");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center left;
+  min-height: 100vh;
+  padding: 6rem;
+
+}
+.about-box{
+  overflow: hidden;
+}
+.header2 .col-md-7.col-sm-7{
+  direction: rtl;
+  text-align: right;
+}
+@media(max-width:1213px){
+  .overlay{
+    position: relative;
+    z-index: 0;
+  }
+  .overlay::before {
+    position: absolute;
+    content: "";
+    background-color: rgb(55 95 64);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+.overlay .heading-primary-main,.overlay .heading-primary-sub ,.overlay .paragraph{
+  color: #fff;
+}
 }
 .main-header__content {
   position: absolute;
@@ -114,6 +157,9 @@
   box-shadow: 0 6px 20px #cac4ce !important;
   width: 100%;
 }
+.services{
+  overflow: hidden;
+}
 .services .row > .col-md {
   margin-bottom: 3rem;
 }
@@ -122,12 +168,16 @@
       padding: 0 5rem;
    }
    }
+   .services .col-lg.mb-md-3{
+     padding-bottom: 3rem;
+   }
 .services-card {
   border-radius: 0.5rem;
   transition: all 0.25s ease-in-out;
   background-color: #f7f7f7;
   padding: 5rem 1rem;
   height: 100%;
+  width: 97%;
 }
   .services-card:not(:last-child) {
     margin-bottom: 2rem;
@@ -171,11 +221,16 @@
       .button:hover {
           transform: translateY(-1px);
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-      }      
+      } 
+      .contactus{
+        overflow: hidden;
+      }     
       .whyus {
           padding-bottom: 10rem;
           margin-bottom: 6rem;
-          background-color: #f7f7f7; }
+          background-color: #f7f7f7;
+          overflow: hidden;
+        }
           #service-3{
               margin-bottom: 3rem;
           }
@@ -479,4 +534,16 @@ label {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 9999; } 
+  z-index: 9999;
+   } 
+@media(max-width: 767px){
+  .about-box_img img{
+    padding-top: 9rem;
+  }
+  .services_service-img-box img{
+    padding-top: 6rem;
+  }
+}
+.lang{
+  text-align: center;
+}

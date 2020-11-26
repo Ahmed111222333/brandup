@@ -20,8 +20,7 @@ $(document).ready(function() {
       center: true,
       items: 1,
       margin: 0,
-      autoplay: true,
-      dots:true,
+     // autoplay: true,
       autoplayTimeout: 3000,
       smartSpeed: 450,
       
@@ -34,3 +33,4 @@ $(document).ready(function() {
     $('#preloader').delay(350).fadeOut('slow');
     $('#navbarNav').removeClass('show');
   });
+  
