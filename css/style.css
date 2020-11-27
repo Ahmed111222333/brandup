@@ -7,7 +7,7 @@
   padding-bottom: 25px;
   font-size: 1.6rem;
   background: #f7f7f7 url("../img/6.png ");
-  background-size: contain;
+  background-size: auto;
   background-repeat: no-repeat;
   background-position: center right;
   min-height: 100vh;
@@ -27,7 +27,9 @@ overflow: hidden;
   background-position:  left;
   min-height: 100vh;
   padding: 6rem;
-
+}
+.header2{
+  text-align: right;
 }
 .about-box{
   overflow: hidden;
@@ -40,6 +42,12 @@ overflow: hidden;
   .overlay{
     position: relative;
     z-index: 0;
+    /*background-size: contain;*/
+  }
+  @media(max-width:670px){
+    .overlay{
+      background-size: contain;
+    }
   }
   .overlay::before {
     position: absolute;
