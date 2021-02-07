@@ -555,3 +555,6 @@ label {
 .lang{
   text-align: center;
 }
+.mapouter{
+  height: 100%;
+}
